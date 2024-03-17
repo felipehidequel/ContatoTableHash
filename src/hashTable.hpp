@@ -24,8 +24,8 @@ private:
   int randInt();
   int hash(std::string chave);
   int sondagemLinear(const int cont, const std::string chave);
-  bool cheia();
 public:
+  bool cheia();
   HashTable();
   Contato busca(std::string chave);
   bool insere(std::string chave, Contato valor);
