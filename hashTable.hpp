@@ -5,13 +5,14 @@
 #include <vector>
 #include <ctime>
 #include <stdlib.h>
+#include "contato.hpp"
 
 class HashTable{
 private:
   struct Entrada {
     int indice;
     std::string chave;
-    std::string valor;
+    Contato valor;
   };
 
   unsigned int n_entradas = 0;
@@ -25,10 +26,10 @@ private:
   int sondagemLinear(const int cont, const std::string chave);
   bool cheia();
 public:
-  HashTable() = default;
-  std::string busca(std::string chave);
-  bool insere(std::string chave, std::string valor);
-  bool atualiza(std::string chave, std::string valor);
+  HashTable();
+  Contato busca(std::string chave);
+  bool insere(std::string chave, Contato valor);
+  bool atualiza(std::string chave, Contato valor);
   bool remove(std::string chave);
 };
 // Path: hashTable.cpp

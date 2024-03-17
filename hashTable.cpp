@@ -49,17 +49,17 @@ HashTable::HashTable(){
   }
 }
 
-std::string HashTable::busca(std::string chave){
+Contato HashTable::busca(std::string chave){
   int indice = this->hash(chave);
 
   if (indice == this->VALOR_PADRAO.indice){
-    return "";
+    return Contato();
   }
 
   return this->tabela[indice].valor;
 }
 
-bool HashTable::insere(std::string chave, std::string valor){
+bool HashTable::insere(std::string chave, Contato valor){
   if(this->cheia()){
     std::cout << "Tabela cheia!" << std::endl;
     return false;
@@ -87,7 +87,7 @@ bool HashTable::insere(std::string chave, std::string valor){
   return true;
 }
 
-bool HashTable::atualiza(std::string chave, std::string valor){
+bool HashTable::atualiza(std::string chave, Contato valor){
   int indice = this->hash(chave);
 
   if (indice == this->VALOR_PADRAO.indice){
@@ -99,7 +99,7 @@ bool HashTable::atualiza(std::string chave, std::string valor){
 }
 
 bool HashTable::remove(std::string chave){
-  int indice = this->hash(chave):
+  int indice = this->hash(chave);
 
   if (indice == this->VALOR_PADRAO.indice){
     return false;

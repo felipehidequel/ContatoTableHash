@@ -1,6 +1,10 @@
 #include "contato.hpp"
 
-Contato::Contato() = default;
+Contato::Contato(){
+  this->nome = "";
+  this->email = "";
+  this->telefone = "";
+}
 void  Contato::setNome(std::string nome) {
   this->nome = nome;
 }
@@ -22,4 +26,10 @@ bool Contato::operator==(Contato outro){
   } else {
     return false;
   }
+}
+bool Contato::operator=(Contato outro){
+  this->nome = outro.nome;
+  this->email = outro.email;
+  this->telefone = outro.telefone;
+  return true;
 }
