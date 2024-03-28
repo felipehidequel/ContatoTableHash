@@ -4,7 +4,11 @@
 #include <fstream>
 #include <string>
 
-
+/**
+ * Lê os contatos de um arquivo e os insere em uma tabela de dispersão.
+ * param tabela A tabela de dispersão onde os contatos serão armazenados.
+ * param nomeArquivo O nome do arquivo a ser lido.
+ */
 void lerContatos(HashTable& tabela, const std::string& nomeArquivo) {
   std::ifstream arquivo(nomeArquivo);
   std::cout << "Lendo contatos do arquivo " << nomeArquivo << std::endl;
