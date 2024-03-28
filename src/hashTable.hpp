@@ -6,7 +6,7 @@
 #include <ctime>
 #include <stdlib.h>
 #include "contato.hpp"
-
+//funções utilizadas
 class HashTable{
 private:
   struct Entrada {

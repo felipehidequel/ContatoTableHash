@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <string>
-
+//funções utilizadas
 class Contato{
 private:
   std::string nome;
