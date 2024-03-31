@@ -22,10 +22,5 @@ O uso da tabela hash no programa de lista de contatos se refere principalmente a
 
 ##
 
-### Pré requisitos e guia de instalação:
-
-
-##
-
 ### Metodologia 
 A metodologia usada no projeto de lista de contatos foi multiplicação para inserção é uma técnica de hashing que utiliza a multiplicação de um valor-chave pela fração parte de uma constante, seguido pelo uso da parte inteira desse resultado para ajustar o índice na tabela hash , juntamente com o uso da sondagem  linear que serve para quando ocorre uma colisão, isto é, quando duas chaves hash que no caso a chave utilizada nesse projeto é uma string no caso os nomes dos usuários possuirem o mesmo valor de hash e tentarem serem inseridas na mesma posição da tabela hash, nessa situação a sondagem linear é uma técnica que irá encontrar a próxima posição disponível na tabela
