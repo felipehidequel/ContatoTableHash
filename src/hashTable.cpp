@@ -1,4 +1,5 @@
 #include "hashTable.hpp"
+#include <fstream> 
 /**
  * Gera um número inteiro aleatório no intervalo [0, MAX_SIZE).
  * retorna Um número inteiro aleatório no intervalo especificado.
@@ -153,3 +154,34 @@ bool HashTable::remove(std::string chave){
   this->n_entradas--;
   return true;
 }
+
+/**
+ * Imprime a tabela de dispersão.
+ */ 
+void HashTable::listarContatos(){
+  for (auto& e : this->tabela){
+    if (e.indice != this->VALOR_PADRAO.indice){
+      e.valor.imprime();
+      std::cout << std::endl;
+    }
+  }
+}
+
+void HashTable::gravarContatos(){
+  std::ofstream arquivo("aqueles_contatos.txt");
+
+  if(arquivo.is_open()){
+    for (auto& e : this->tabela){
+      if (e.indice != this->VALOR_PADRAO.indice){
+        arquivo << "Nome: "<< e.valor.getNome() << std::endl;
+        arquivo << "Telefone: "<<e.valor.getTelefone() << std::endl;
+        arquivo << "Email: "<<e.valor.getEmail() << std::endl;
+        arquivo << std::endl;
+      }
+    }
+    arquivo.close();
+  }else{
+    std::cout << "Erro ao abrir arquivo!" << std::endl;
+  }
+}
+    

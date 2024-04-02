@@ -31,5 +31,7 @@ public:
   bool insere(std::string chave, Contato valor);
   bool atualiza(std::string chave, Contato valor);
   bool remove(std::string chave);
+  void listarContatos();
+  void gravarContatos();
 };
 // Path: hashTable.cpp

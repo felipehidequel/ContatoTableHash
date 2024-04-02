@@ -1,0 +1,40 @@
+Nome: Joana Pinto
+Telefone: +55 31 5474-3036
+Email: pduarte@example.com
+
+Nome: Joana Pires
+Telefone: 71 6530 8039
+Email: joao-gabrielteixeira@example.com
+
+Nome: Ryan Campos
+Telefone: (084) 1998-4633
+Email: fcarvalho@example.org
+
+Nome: Gustavo Carvalho
+Telefone: 21 1861 3645
+Email: das-nevesian@example.org
+
+Nome: Agatha Viana
+Telefone: (011) 3131-4684
+Email: nina55@example.com
+
+Nome: Daniel Ferreira
+Telefone: (031) 1088-3385
+Email: melonoah@example.net
+
+Nome: Rebeca da Mata
+Telefone: 51 7704 4573
+Email: pedro-lucasfogaca@example.net
+
+Nome: Isaac da Mota
+Telefone: +55 (031) 1533 0426
+Email: pereiralavinia@example.net
+
+Nome: Clara Oliveira
+Telefone: 41 9406 6671
+Email: znascimento@example.org
+
+Nome: Diego Vieira
+Telefone: +55 81 8652-4432
+Email: joao-lucas23@example.net
+
